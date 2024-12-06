@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 8 Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: rgb(70, 0, 128);
+            width: 75%;
+            border: 1px solid black;
+            padding: 10px;
+            margin: auto;
+            margin-top: 100px;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
+
+        .tile {
+            background-color: #ddd;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .tile1 {
+            grid-column: span 4;
+            grid-row: span 2;
+            height: 140px;
+            background-image: url('Tille 1.JPG');
+
+        }
+
+        .tile2 {
+            grid-column: span 4;
+            grid-row: span 2;
+            height: 140px;
+            background-image: url('Tille 2.JPG');
+        }
+
+        .tile3 {
+            grid-column: span 2;
+            grid-row: span 2;
+            height: 140px;
+            background-image: url('Tille 3.JPG');
+        }
+
+        .tile4 {
+            background-image: url('Tille 4.JPG');
+        }
+
+        .tile5 {
+            background-image: url('Tille 5.JPG');
+        }
+
+        .tile6 {
+            background-image: url('Tille 6.JPG');
+        }
+
+        .tile7 {
+            background-image: url('Tille 7.JPG');
+        }
+
+
+        .smallBox {
+            height: 65px;
+        }
+
+        .tile8 {
+            grid-column: span 4;
+            grid-row: span 2;
+            height: 140px;
+            background-image: url('Tille 8.JPG');
+        }
+
+        .tile9 {
+            grid-column: span 4;
+            grid-row: span 4;
+            height: 287px;
+            background-image: url('Tille 9.JPG');
+        }
+
+        .tile10 {
+            background-image: url('Tille 10.JPG');
+        }
+
+        .tile11 {
+            background-image: url('Tille 11.JPG');
+        }
+
+        .tile10,
+        .tile11,
+        .tile12,
+        .tile13 {
+            grid-column: span 2;
+            grid-row: span 2;
+            height: 140px;
+        }
+
+        .tile12 {
+            background-image: url('Tille 12.JPG');
+
+        }
+
+        .tile13 {
+            background-image: url('Tille 13.JPG');
+        }
+
+        .tile14 {
+            grid-column: span 4;
+            grid-row: span 2;
+            height: 140px;
+            background-image: url('Tille 14.JPG');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tile1 tile"></div>
+        <div class="tile2 tile"></div>
+        <div class="tile3 tile"></div>
+        <div class="tile4 tile smallBox"></div>
+        <div class="tile5 tile smallBox"></div>
+        <div class="tile6 tile smallBox"></div>
+        <div class="tile7 tile smallBox"></div>
+        <div class="tile8 tile"></div>
+        <div class="tile9 tile"></div>
+        <div class="tile10 tile"></div>
+        <div class="tile11 tile"></div>
+        <div class="tile12 tile"></div>
+        <div class="tile13 tile"></div>
+        <div class="tile14 tile"></div>
+    </div>
+</body>
+
+</html>
